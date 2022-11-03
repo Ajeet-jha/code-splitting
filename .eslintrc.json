@@ -13,7 +13,7 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react"],
-    "ignorePatterns": ["**/src/*.test.js"],
+    // "ignorePatterns": ["**/src/*.test.js"],
 	"rules": {
 		"react/react-in-jsx-scope": "off",
 		"react/no-children-prop": 0,
