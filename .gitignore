@@ -5,14 +5,14 @@
 /.pnp
 .pnp.js
 
-# testing
+# testing 
 /coverage
 
 # production
 /build
 
 # cache
-.eslintcache
+/.eslintcache
 
 # misc
 .DS_Store
