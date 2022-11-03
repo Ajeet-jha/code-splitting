@@ -1,0 +1,36 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["plugin:react/recommended", "airbnb", "prettier"],
+	"overrides": [],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+    "ignorePatterns": ["**/src/*.test.js"],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"react/no-children-prop": 0,
+		"react/prop-types": 0,
+		"react/button-has-type": 0,
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"react/no-unknown-property": 0,
+		"react/jsx-props-no-spreading": "off",
+		"jsx-a11y/click-events-have-key-events": "off",
+		"jsx-a11y/no-noninteractive-element-interactions": "off",
+		"default-param-last": 0,
+		"no-nested-ternary": "off",
+		"jsx-a11y/no-static-element-interactions": "off"
+	}
+}
