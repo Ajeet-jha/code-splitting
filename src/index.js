@@ -1,8 +1,11 @@
 /* eslint-disable */
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
+import loadable from '@loadable/component';
+const App = loadable(() =>
+	import(/* webpackChunkName: "loadable-app" */ './App')
+);
 import './index.css';
-const App = lazy(() => import('./App'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,17 +15,3 @@ root.render(
 		</Suspense>
 	</React.StrictMode>
 );
-
-/*
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
-);
-**/
